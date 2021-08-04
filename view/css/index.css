@@ -1,0 +1,37 @@
+.navbar{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    color: white !important;
+    background-color: #8A0A8B !important;
+}
+
+.navbar a{
+    color: #2EDBE3 !important;
+}
+
+.navbar .btn-logar{
+    background-color: white !important;
+    height: 27px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    box-shadow: none !important;
+}
+
+.navbar .btn-logar:hover{
+    background-color: #FF328B !important;
+    color: white;
+}
+
+.navbar span{
+    color: #FF328B;
+}
+
+@media(min-width: 992px){
+    .navbar{
+        height: 40px;
+    }
+}
