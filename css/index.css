@@ -6,6 +6,17 @@
     list-style-type: none;
 }
 
+.collapse .btn{
+    height: 27px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    width: 100px;
+    background-color: #2492C9 !important;
+    font-size: 13px;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     height: 100vh;
@@ -24,16 +35,18 @@ body{
     box-shadow: 0 0 128px  0 rgba(0,0,0,0.1), 0 32px 64px -48px rgba(0,0,0,0.5);
 }
 
-.collapse .btn{
-    height: 27px ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0;
-    width: 100px;
-    background-color: #2492C9 !important;
-    font-size: 13px;
+.navbar-toggler{
+    border-radius: 0 !important;
+    font-size: 24px !important;
+    border:1px solid transparent !important;
+    background-color: transparent;
+    color: #2492C9 !important;
 }
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
 
 .bxl-discord-alt{
     font-size: 23px !important;
