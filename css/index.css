@@ -11,6 +11,10 @@
     align-items: center !important;
     padding: 0 !important;
     height: 40px !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .navbar span{

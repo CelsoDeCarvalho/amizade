@@ -25,7 +25,7 @@
                     <i class='bx bxs-grid'></i>
                 </a>
                 <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item text-muted"  href="#"><i class='bx bxs-log-in' style="margin-right: 4px"></i>Entrar</a></li>
+                    <li><a class="dropdown-item text-muted" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  href="#"><i class='bx bxs-log-in' style="margin-right: 4px"></i>Entrar</a></li>
                     <li><a class="dropdown-item text-muted" href="#"><i class='bx bxs-cog' style="margin-right: 4px"></i>Definicoes</a></li>
                     <li>
                         <hr class="dropdown-divider">
@@ -36,6 +36,39 @@
         </div>
     </nav>
 </section>
+
+<!-- Modal Login-->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-login">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Efetue o login</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-8">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
