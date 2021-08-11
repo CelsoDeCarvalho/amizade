@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+.init-section{
+    height: 100%;
+    width: 100%;
+    background: url("../images/redes-sociais.gif") no-repeat center;
+    background-size:30%;
+}
+
+.bg-light{
+    background-color: white !important;
+    box-shadow: 0 0 128px  0 rgba(0,0,0,0.1), 0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+.collapse .btn{
+    height: 27px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    width: 100px;
+    background-color: #2492C9 !important;
+    font-size: 13px;
+}
+
+.bxl-discord-alt{
+    font-size: 23px !important;
+    margin-right:5px;
+    color: #FF435D;
+}
+
+.navbar-brand span{
+    color: #2492C9;
+}
+
+.modal-login{
+    border-radius: 0 !important;
+}
+
+.modal-login .btn{
+    height: 27px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    font-size: 13px;
+}
+
+.modal-login .form-control{
+    height: 30px !important;
+    border-radius: 0;
+    font-size: 12px;
+}
+
+.modal-login .modal-body{
+    font-size: 12px;
+}
+
+@media(max-width:700px){
+    .init-section{
+        background-size:70%;
+    }
+}
+
+@media(min-width:991px){
+    .collapse{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    nav{
+        height: 40px;
+    }
+}
+
+
+@media(max-width:550px){
+    .init-section{
+        background-size:90%;
+    }
+}
+
