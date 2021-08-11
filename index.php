@@ -11,93 +11,37 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Amizade</title>
 </head>
-<body>
-<section class="init-section">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand text-muted"> <i class='bx bxl-discord-alt'></i> <span>A</span>mizade</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <i class='bx bxs-grid'></i>
-            </button>
 
-            <!-- Modal login-->
-            <div class="modal  fade" id="staticBackdrop-login" data-bs-backdrop="static" data-bs-keyboard="false"
-                 tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content modal-login">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-8">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                                   aria-describedby="emailHelp"
-                                                   placeholder="seu email">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label">Senha</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                                   placeholder="sua senha">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary mb-5">Logar</button>
-                                    </form>
-                                    <span>Nao tenho conta.
-                                        <a href="#"
-                                           id="registar-se"
-                                           data-bs-toggle="modal"
-                                           data-bs-target="#staticBackdrop-cadastro"
-                                        >Registar-se
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger btn--close" data-bs-dismiss="modal">Fechar
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop-login"><i
-                            class='bx bx-log-in' style="margin-right: 4px"></i>Entrar</a>
-            </div>
+<body>
+
+<section class="init-section">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand m-0 me-auto h1"><i class='bx bx-hash'></i>AMIZADE</span>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                    <i class='bx bxs-grid'></i>
+                </a>
+                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-muted"  href="#"><i class='bx bxs-log-in' style="margin-right: 4px"></i>Entrar</a></li>
+                    <li><a class="dropdown-item text-muted" href="#"><i class='bx bxs-cog' style="margin-right: 4px"></i>Definicoes</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-muted" href="#"><i class='bx bxs-info-square' style="margin-right: 4px"></i>Sobre o app</a></li>
+                </ul>
+            </li>
         </div>
     </nav>
-
-
-    <!-- Modal cadastro-->
-    <div class="modal fade" id="staticBackdrop-cadastro" data-bs-backdrop="static" data-bs-keyboard="false"
-         tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </section>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
 <script src="js/index.js">
-
 </script>
-
 </body>
 </html>
