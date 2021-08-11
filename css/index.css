@@ -62,6 +62,7 @@ body{
     font-family: 'Poppins', sans-serif;
     height: 100vh;
     width: 100vw;
+    overflow-y:auto;
 }
 
 .init-section{
@@ -119,7 +120,12 @@ body{
 }
 
 .modal-login .modal-body{
-    font-size: 12px;
+    font-size: 12px !important;
+}
+
+.modal-login .modal-body img{
+    width: 50px;
+    border: 1px solid;
 }
 
 @media(max-width:700px){

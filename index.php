@@ -6,8 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <title>Amizade</title>
 </head>
@@ -20,12 +19,11 @@
             <span class="navbar-brand m-0 me-auto h1"><i class='bx bx-hash'></i>AMIZADE</span>
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                   aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class='bx bxs-grid'></i>
                 </a>
                 <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item text-muted" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  href="#"><i class='bx bxs-log-in' style="margin-right: 4px"></i>Entrar</a></li>
+                    <li><a class="dropdown-item text-muted" href="#" data-toggle="modal" data-target="#exampleModal"><i class='bx bxs-log-in' style="margin-right: 4px"></i>Entrar</a></li>
                     <li><a class="dropdown-item text-muted" href="#"><i class='bx bxs-cog' style="margin-right: 4px"></i>Definicoes</a></li>
                     <li>
                         <hr class="dropdown-divider">
@@ -37,44 +35,111 @@
     </nav>
 </section>
 
-<!-- Modal Login-->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<!-- Modal login-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content modal-login">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Efetue o login</h5>
+                <h6 class="modal-title" id="exampleModalLabel">Efetue o login</h6>
             </div>
             <div class="modal-body">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-8">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <div class="row d-fle justify-content-center">
+                    <div class="col-10">
+                        <form class="mb-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1">
                             </div>
-
                             <button type="submit" class="btn btn-primary">Entrar</button>
                         </form>
+                        <span style="font-size: 12px">Nao tenho conta!<a style="margin-left: 3px" href="#"  data-dismiss="modal" data-toggle="modal" data-target="#exampleModal1">Registar-se</a></span>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
             </div>
         </div>
     </div>
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-<script src="js/index.js">
-</script>
+<!-- Modal cadastro-->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-login">
+            <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel">Cadastre-se</h6>
+            </div>
+            <div class="modal-body">
+                <div class="row d-fle justify-content-center">
+                    <div class="col-10">
+                        <form class="mb-3">
+                            <div class="container">
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="username">Nickname</label>
+                                        <input type="text" class="form-control" id="username">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="inputState">Genero</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected></option>
+                                            <option>Masculino</option>
+                                            <option>Feminino</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="username">Data de nascimento</label>
+                                        <input type="date" class="form-control" id="username">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="inputState">Provincia</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected></option>
+                                            <option>Nampula</option>
+                                            <option>Maputo</option>
+                                            <option>Sofala</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"             aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Concluir</button>
+                        </form>
+                        <span style="font-size: 12px">Tenho uma conta!<a style="margin-left: 3px" href="#"  data-dismiss="modal" data-toggle="modal" data-target="#exampleModal">Logar-se</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>
