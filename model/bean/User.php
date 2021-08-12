@@ -11,22 +11,10 @@ class User{
 
     /**
      * User constructor.
-     * @param $nickname
-     * @param $email
-     * @param $password
-     * @param $genre
-     * @param $state
-     * @param $birth_date
      */
-    public function __construct($nickname, $email, $password, $genre, $state, $birth_date)
-    {
-        $this->nickname = $nickname;
-        $this->email = $email;
-        $this->password = $password;
-        $this->genre = $genre;
-        $this->state = $state;
-        $this->birth_date = $birth_date;
+    public function __construct(){
     }
+
 
     /**
      * @return mixed

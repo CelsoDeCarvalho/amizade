@@ -78,20 +78,20 @@
             <div class="modal-body">
                 <div class="row d-fle justify-content-center">
                     <div class="col-10">
-                        <form class="mb-3">
+                        <form method="post" class="mb-3">
                             <div class="container">
                             </div>
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label for="username">Nickname</label>
-                                        <input type="text" class="form-control" id="username">
+                                        <input type="text" name="nickname" class="form-control" id="username">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label for="inputState">Genero</label>
-                                        <select id="inputState" class="form-control">
+                                        <select id="inputState" name="genre" class="form-control">
                                             <option selected></option>
                                             <option>Masculino</option>
                                             <option>Feminino</option>
@@ -103,13 +103,13 @@
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label for="username">Data de nascimento</label>
-                                        <input type="date" class="form-control" id="username">
+                                        <input type="date" name="birth_date" class="form-control" id="username">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label for="inputState">Provincia</label>
-                                        <select id="inputState" class="form-control">
+                                        <select id="inputState" name="state" class="form-control">
                                             <option selected></option>
                                             <option>Nampula</option>
                                             <option>Maputo</option>
@@ -120,11 +120,11 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"             aria-describedby="emailHelp">
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1"             aria-describedby="emailHelp">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                             </div>
                             <button type="submit" class="btn btn-primary">Concluir</button>
                         </form>
