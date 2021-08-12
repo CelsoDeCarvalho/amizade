@@ -100,6 +100,14 @@ body{
     color: #2492C9;
 }
 
+.modal{
+    overflow-y: auto !important;
+}
+
+.modal::-webkit-scrollbar{
+    display: none;
+}
+
 .modal-login{
     border-radius: 0 !important;
 }
