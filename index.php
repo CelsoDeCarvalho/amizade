@@ -45,16 +45,16 @@
             <div class="modal-body">
                 <div class="row d-fle justify-content-center">
                     <div class="col-10">
-                        <form class="mb-3">
+                        <form method="post" class="mb-3" id="form-login">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="email-login" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <input type="password" class="form-control" id="password-login">
                             </div>
-                            <button type="submit" class="btn btn-primary">Entrar</button>
+                            <button type="submit" id="btn-logar" class="btn btn-primary">Entrar</button>
                         </form>
                         <span style="font-size: 12px">Nao tenho conta!<a style="margin-left: 3px" href="#"  data-dismiss="modal" data-toggle="modal" data-target="#exampleModal1">Registar-se</a></span>
                     </div>
@@ -78,7 +78,10 @@
             <div class="modal-body">
                 <div class="row d-fle justify-content-center">
                     <div class="col-10">
-                        <form method="post" class="mb-3">
+                        <div id="caixa-erros" style="display: none" class="alert alert-danger texto-erros" role="alert">
+                            A simple danger alert—check it out!
+                        </div>
+                        <form method="post" class="mb-3" id="form-cadastro">
                             <div class="container">
                             </div>
                             <div class="row">
@@ -126,7 +129,7 @@
                                 <label for="exampleInputPassword1">Password</label>
                                 <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                             </div>
-                            <button type="submit" class="btn btn-primary">Concluir</button>
+                            <button type="submit" id="btn-cadastrar" class="btn btn-primary">Concluir</button>
                         </form>
                         <span style="font-size: 12px">Tenho uma conta!<a style="margin-left: 3px" href="#"  data-dismiss="modal" data-toggle="modal" data-target="#exampleModal">Logar-se</a></span>
                     </div>
@@ -142,5 +145,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 <script src="js/signup.js"></script>
+<script src="js/signin.js"></script>
 </body>
 </html>

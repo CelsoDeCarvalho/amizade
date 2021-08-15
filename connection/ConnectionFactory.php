@@ -2,19 +2,22 @@
 
 class ConnectionFactory{
 
-    private $username = "root";
-    private $password = "";
-    private $dns = "mysql:dbname=amizade;host:localhost";
+    private static $instance;
 
-    public function conector(){
+    public static function connector(){
+
         try {
-            $pdo = new PDO($this->dns, $this->username, $this->password);
-            return "Conectado com sucesso";
+            self::$instance = new PDO("mysql:dbname=amizade;host:localhost","root","");
+            self::$instance->setAttribute(PDO::ATTR_ERRMODE,
+                PDO::ERRMODE_EXCEPTION);
+            self::$instance->setAttribute(PDO::ATTR_ORACLE_NULLS,
+                PDO::NULL_EMPTY_STRING);
         } catch (Exception $e) {
             return "Falha ao conectar. Erro: " . $e->getMessage();
         }
-    }
 
+        return self::$instance;
+    }
 }
 
 ?>
