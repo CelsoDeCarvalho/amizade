@@ -8,7 +8,7 @@ form_cadastro.onsubmit = (e) => {
 
 btn_cadastrar.onclick = () => {
     var ajax= new XMLHttpRequest();
-    ajax.open("POST","../amizade/controller/UserController.php",true);
+    ajax.open("POST","./amizade/controller/UserController.php",true);
 
     ajax.onload = () => {
         if(ajax.readyState == XMLHttpRequest.DONE){
