@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['cod_number'])){
+    header("location:");
+}
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -46,13 +53,16 @@
                 <div class="row d-fle justify-content-center">
                     <div class="col-10">
                         <form method="post" class="mb-3" id="form-login">
+                            <div id="caixa-erros-login" style="display: none" class="alert alert-danger texto-erros" role="alert">
+                                A simple danger alert—check it out!
+                            </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="email-login" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" name="email-login" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="password-login">
+                                <input type="password" class="form-control" name="password-login">
                             </div>
                             <button type="submit" id="btn-logar" class="btn btn-primary">Entrar</button>
                         </form>
