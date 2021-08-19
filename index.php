@@ -1,10 +1,3 @@
-<?php
-session_start();
-if(!isset($_SESSION['cod_number'])){
-    header("location:");
-}
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -91,10 +84,16 @@ if(!isset($_SESSION['cod_number'])){
                         <div id="caixa-erros" style="display: none" class="alert alert-danger texto-erros" role="alert">
                             A simple danger alert—check it out!
                         </div>
-                        <form method="post" class="mb-3" id="form-cadastro">
+                        <form method="post" class="mb-3" id="form-cadastro" enctype="multipart/form-data">
                             <div class="container">
                             </div>
                             <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group image">
+                                        <label for="pic">Selecione uma foto para o perfil</label>
+                                        <input type="file" name="image" id="pic">
+                                    </div>
+                                </div>
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label for="username">Nickname</label>

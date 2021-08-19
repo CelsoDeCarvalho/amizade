@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow-y:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat{
+    background-color: white;
+    height: 95%;
+    width: 95%;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    padding: 0;
+}
+
+.chat .header{
+    width: 100%;
+    height: 60px;
+    background-color: #E9EBEC;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.chat .header img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.chat .body{
+    height: calc(100% - 110px);
+    background: url("../images/8c98994518b575bfd8c949e91d20548b.jpg");
+    overflow-y: auto;
+    padding: 5px;
+}
+
+.chat .body::-webkit-scrollbar{
+    display: none;
+}
+
+.chat .footer{
+    width: 100%;
+    height: 50px;
+    background-color: #E9EBEC;
+    display: flex;
+    align-items: center;
+}
+
+.chat .footer input{
+    height: 30px;
+    margin-right: 5px;
+    font-size: 12px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.chat .footer button{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.msg-receive{
+    display: flex;
+    align-items: flex-end;
+}
+
+.msg-receive .mensagem{
+    max-width: 70%;
+    margin-right: auto;
+}
+
+.msg-receive .mensagem p{
+    background: #FF435D;
+    padding:8px 16px;
+    border-radius: 18px 18px 18px 0;
+    color: white;
+    word-break: break-word;
+}
+
+.msg-receive img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.msg-send{
+    display: flex;
+}
+
+.msg-send .mensagem{
+    max-width: 70%;
+    margin-left: auto;
+}
+
+.msg-send .mensagem p{
+    background: #2492C9;
+    padding:8px 16px;
+    border-radius: 18px 18px 0 18px;
+    color: white;
+    word-break: break-word;
+}
+

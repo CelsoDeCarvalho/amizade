@@ -8,6 +8,8 @@ class User{
     private $genre;
     private $state;
     private $birth_date;
+    private $image;
+    private $statu;
 
     /**
      * User constructor.
@@ -17,16 +19,20 @@ class User{
      * @param $genre
      * @param $state
      * @param $birth_date
+     * @param $image
+     * @param $status
      */
-    public function __construct($nickname, $email, $password, $genre, $state, $birth_date){
+    public function __construct($nickname, $email, $password, $genre, $state, $birth_date, $image, $statu)
+    {
         $this->nickname = $nickname;
         $this->email = $email;
         $this->password = $password;
         $this->genre = $genre;
         $this->state = $state;
         $this->birth_date = $birth_date;
+        $this->image = $image;
+        $this->statu = $statu;
     }
-
 
     /**
      * @return mixed
@@ -123,6 +129,39 @@ class User{
     {
         $this->birth_date = $birth_date;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param mixed $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStatu()
+    {
+        return $this->statu;
+    }
+
+    /**
+     * @param mixed $statu
+     */
+    public function setStatu($statu)
+    {
+        $this->statu = $statu;
+    }
+
 
 }
 
