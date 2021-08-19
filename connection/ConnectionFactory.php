@@ -7,7 +7,7 @@ class ConnectionFactory{
     public static function connector(){
 
         try {
-            self::$instance = new PDO("mysql:dbname=amizade;host:localhost","root","");
+            self::$instance = new PDO("mysql:dbname=amizade;host:localhost","root","p@ssword");
             self::$instance->setAttribute(PDO::ATTR_ERRMODE,
                 PDO::ERRMODE_EXCEPTION);
             self::$instance->setAttribute(PDO::ATTR_ORACLE_NULLS,
