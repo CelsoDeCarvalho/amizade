@@ -1,5 +1,5 @@
 <?php
-include_once "../model/dao/UserDAO.php";
+include_once "../../amizade/model/dao/UserDAO.php";
 session_start();
 
 class UserReadController

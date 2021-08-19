@@ -9,7 +9,7 @@ form_login.onsubmit = (e) => {
 
 btn_logar.onclick = () => {
     var ajax= new XMLHttpRequest();
-    ajax.open("POST","../amizade/controller/LoginController.php",true);
+    ajax.open("POST","/amizade/controller/LoginController.php",true);
 
     ajax.onload = () => {
         if(ajax.readyState == XMLHttpRequest.DONE){

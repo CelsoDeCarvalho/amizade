@@ -1,5 +1,5 @@
 <?php
-require_once '../connection/ConnectionFactory.php';
+include_once "../../amizade/connection/ConnectionFactory.php";
 session_start();
 
 class LoginController{

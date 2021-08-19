@@ -1,8 +1,8 @@
 <?php
 
-require_once '../model/bean/User.php';
-require_once '../model/dao/UserDAO.php';
-require_once '../connection/ConnectionFactory.php';
+require_once '../../amizade/model/bean/User.php';
+require_once '../../amizade/model/dao/UserDAO.php';
+include_once "../../amizade/connection/ConnectionFactory.php";
 session_start();
 
 class UserController{

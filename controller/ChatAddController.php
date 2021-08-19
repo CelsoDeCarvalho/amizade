@@ -1,6 +1,6 @@
 <?php
-require_once '../model/bean/Chat.php';
-require_once '../model/dao/ChatDAO.php';
+require_once '../../amizade/model/bean/Chat.php';
+require_once '../../amizade/model/dao/ChatDAO.php';
 
 class ChatAddController{
 
